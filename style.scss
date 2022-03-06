@@ -1,0 +1,217 @@
+@import "_reset.scss";
+@import "_header.scss";
+@import "_arrivals.scss";
+@import "_footer.scss";
+@import "_futured-items.scss";
+
+
+// collection slider
+.collection_images {
+    background: #F7F7F7;
+    min-height: 624px;
+    position: relative;
+    border-top: 1px solid #EAEAEA;
+    border-bottom: 1px solid #EAEAEA;
+
+    @media(min-width: 1170px) {
+        min-height: 777px;
+
+    }
+
+    .collection_images-woomen {
+
+        img {
+            display: block;
+            max-width: 100%;
+            margin-top: 85px;
+            margin-left: auto;
+            margin-right: auto;
+
+            @media(min-width: 768px) {
+                margin-top: 30px;
+            }
+
+            @media(min-width: 1170px) {
+                margin-top: 11px;
+
+            }
+
+        }
+    }
+
+
+    .collection_images-arrows-left,
+    .collection_images-arrows-right {
+        position: absolute;
+        background-repeat: no-repeat;
+        background-color: rgba(42, 42, 42, 0.15);
+        background-position: center;
+        width: 47px;
+        height: 47px;
+        top: 50%;
+        // calc( 50vh – 1/2 высота элемента) -уравнение позволяющее выставить элемент по центру родительнского блока.
+        top: calc(50% - 47px / 2);
+    }
+
+    .collection_images-arrows-left {
+        left: 0;
+        background-image: url(images/collection_arrow_left.svg);
+
+        &:hover {
+            background-image: url(images/collection_arrow_left_hover.svg);
+        }
+
+    }
+
+    .collection_images-arrows-right {
+        right: 0;
+        background-image: url(images/collection_arrow_right.svg);
+
+        &:hover {
+            background-image: url(images/collection_arrow_right_hover.svg);
+        }
+
+    }
+}
+
+// women collection
+
+.women_collection {
+    padding: 64px 24px;
+    font-weight: 300;
+    text-align: center;
+    border-bottom: 1px solid #EAEAEA;
+    margin-bottom: 64px;
+    background: white;
+
+    @media(min-width: 768px) {
+        margin-bottom: 129px;
+    }
+
+    @media(min-width: 1170px) {
+        border: 1px solid #EAEAEA;
+        padding: 64px 0;
+        position: relative;
+        margin-top: -69px;
+    }
+
+    .women_collection_top {
+        .text_women_title {
+            font-size: 14px;
+            line-height: 17px;
+            color: #F16D7F;
+        }
+
+        .divider_top {
+            border: 3px solid #EF5B70;
+            width: 63px;
+            margin: 12px auto;
+        }
+
+
+        .text_women_heading {
+            font-size: 18px;
+            line-height: 22px;
+            color: #4D4D4D;
+        }
+
+        .text_women_paragraf {
+            font-size: 14px;
+            line-height: 20px;
+            color: #5E5E5E;
+            margin: 32px auto;
+            max-width: 326px;
+
+            @media(min-width: 768px) {
+                margin-top: 48px;
+                max-width: 555px;
+            }
+        }
+
+        .women_price {
+            margin-bottom: 32px;
+            font-size: 24px;
+            line-height: 31px;
+            color: #EF5B70;
+            text-align: center;
+
+            @media(min-width: 768px) {
+                margin-bottom: 65px;
+            }
+        }
+
+        .divider_bot {
+            border: 1px solid #EAEAEA;
+            width: 174px;
+            margin: 0 auto;
+            margin-bottom: 49px;
+
+            @media(min-width: 768px) {
+                width: 641px;
+            }
+        }
+    }
+
+    .women__filtersCollection {
+        display: flex;
+        font-size: 10px;
+        line-height: 12px;
+        color: #6F6E6E;
+        justify-content: center;
+
+        @media(min-width: 768px) {
+            font-size: 14px;
+            line-height: 17px;
+            color: #6F6E6E;
+        }
+
+        img {
+            padding-left: 5px;
+
+            @media(min-width: 375px) {
+                padding-left: 10px;
+            }
+
+            @media(min-width: 768px) {
+                padding-left: 9px;
+            }
+        }
+
+        &>div:not(:last-child) {
+            margin-right: 13px;
+
+            @media(min-width: 375px) {
+                margin-right: 25px;
+            }
+
+            @media(min-width: 768px) {
+                margin-right: 23px;
+            }
+        }
+
+    }
+
+    .women_collection__button {
+        margin-top: 65px;
+        display: flex;
+        justify-content: center;
+
+        button {
+            background: none;
+            border: 1px solid #FF6A6A;
+            color: #F26376;
+            display: flex;
+            align-items: center;
+            padding: 14px 23px;
+            font-size: 14px;
+
+            img {
+                width: 26px;
+                height: 24px;
+                margin-right: 11px;
+            }
+        }
+    }
+
+
+}
