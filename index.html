@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,700;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Обертка всего содержимого страницы (wrapper), для прижатя footer к нижней части экрана -->
+    <div class="wrapper">
+        <!-- разбиение сайта на верхнюю часть (top_content) и нижнюю часть (footer) -->
+        <div class="top_content">
+            <!-- Шапка -->
+            <div class="header">
+                <div class="container">
+                    <div class="left__menu">
+                        <img src="images/logo.svg" alt="logo">
+                        <img class="searchIcon" src="images/search.svg" alt="search">
+                    </div>
+                    <div class="right__menu">
+                        <img class="barsLogo" src="images/bars.svg" alt="bars">
+                        <img class="userLogo" src="images/user.svg" alt="user">
+                        <span class="cartLogo__wrap">
+                            <img class="cartLogo" src="images/cart.svg" alt="cart">
+                            <span class="cartText">5</span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <!-- SHOPPING CART -->
+            <div class="b-shoppingCart">
+                <div class="container">
+                    <h1>SHOPPING CART</h1>
+                </div>
+            </div>
+            <div class="b-product container">
+
+                <div class="b-product__left">
+                    <!-- Карточки товара 2шт. -->
+                    <div class="b-product__item b-product__item_position1">
+                        <div class="b-product__img">
+                            <img src="images/product-cart-1.jpg" alt="product-cart-1">
+                        </div>
+                        <div class="b-product__info b-product__info_position">
+                            <div class="b-product__mango b-product__mango_position  ">
+                                MANGO PEOPLE T-SHIRT
+                            </div>
+                            <div class="b-product__price">
+                                Price: <span>$300</span>
+                            </div>
+                            <div class="b-product__color">
+                                Color: <span>red</span>
+                            </div>
+                            <div class="b-product__size">
+                                Size: <span>XL</span>
+                            </div>
+                            <div class="b-product__quantity">
+                                Quantity:
+                                <input type="text" placeholder="2">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="b-product__item b-product__item_position2">
+                        <div class="b-product__img">
+                            <img src="images/product-cart-2.jpg" alt="product-cart-1">
+                        </div>
+                        <div class="b-product__info b-product__info_position">
+                            <div class="b-product__mango b-product__mango_position  ">
+                                MANGO PEOPLE T-SHIRT
+                            </div>
+                            <div class="b-product__price">
+                                Price: <span>$300</span>
+                            </div>
+                            <div class="b-product__color">
+                                Color: <span>red</span>
+                            </div>
+                            <div class="b-product__size">
+                                Size: <span>XL</span>
+                            </div>
+                            <div class="b-product__quantity">
+                                Quantity:
+                                <input type="text" placeholder="2">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="b-product__buttonsLeft">
+                        <button>Clear shopping cart</button>
+                        <button>Continue shopping</button>
+                    </div>
+                </div>
+                <!-- Форма заполнения адресса. SHIPPING ADRESS/ И обшая сумма GRAND total  -->
+                <div class="b-product__right b-product__right_position">
+                    <div class="b-product__data b-product__data_position">
+                        <div class="b-product__header">
+                            SHIPPING ADRESS
+                        </div>
+                        <form action="#" class="b-product__form">
+                            <input type="text" placeholder="Bangladesh">
+                            <input type="text" placeholder="State">
+                            <input type="text" placeholder="Postcode / Zip">
+                        </form>
+                        <div class="b-product__buttonsRight">
+                            <button>
+                                Get a quote
+                            </button>
+                        </div>
+                    </div>
+                    <div class="b-product__checkout">
+                        <div class="b-checkout__subTotal">
+                            SUB TOTAL <span>$900</span>
+                        </div>
+                        <div class="b-checkout__grandTotal">
+                            GRAND TOTAL <span>$900</span>
+                        </div>
+                        <div class="b-cheockout__divider"></div>
+                        <!-- Кнопка перейти к оформлению заказа  -->
+                        <div class="b-checkout_buttonProceed">
+                            PROCEED TO CHECKOUT
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+
+
+            </div>
+        </div>
+    </div>
+    <!-- Подвал сайта -->
+    <div class="footer">
+        <!-- SUBSCRIBE -->
+        <div class="subscribe">
+            <div class="sub_block container">
+                <div class="sub_top">
+                    <img src="images/sub-top.svg" alt="">
+                    <p>“Vestibulum quis porttitor dui! Quisque viverra nunc mi, <span>a pulvinar purus
+                            condimentum</span>“
+                    </p>
+                </div>
+                <div class="sub_bot">
+                    <div class="sub_bot-text">
+                        <h3>SUBSCRIBE</h3>
+                        <p>FOR OUR NEWLETTER AND PROMOTION</p>
+                    </div>
+                    <form class="sub_bot-form" action="#">
+                        <input type="text" placeholder="Enter Your Email">
+                        <button>Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- copyright-->
+        <div class="copyright ">
+            <div class="copy_block container">
+                <div class="icon">
+                    <a href="#">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-pinterest-p"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                </div>
+                <div class="copyright_text">
+                    &copy; 2021 Brand All Rights Reserved.
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

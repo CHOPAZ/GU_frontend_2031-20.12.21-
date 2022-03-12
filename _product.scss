@@ -1,0 +1,376 @@
+.b-product {
+    @media(min-width: 1170px) {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.b-product__left {
+    @media(min-width: 1170px) {
+        flex-grow: 1;
+    }
+}
+
+.b-product__item {
+    display: flex;
+    box-shadow: (8px 8px 21px rgba(0, 0, 0, 0.13));
+    position: relative;
+
+    // Крестик закрытия (позаимствовал у преподавателя)
+    &:before {
+        content: '';
+        display: block;
+        position: absolute;
+        right: 2px;
+        top: 18px;
+        background: url(images/closeimg.svg) no-repeat;
+        width: 10px;
+        height: 11px;
+        background-size: 100%;
+
+        @media(min-width: 327px) {
+            right: 12px;
+        }
+
+        @media(min-width: 768px) {
+            right: 24px;
+            top: 28px;
+            width: 18px;
+            height: 18px;
+        }
+
+    }
+
+    @media(min-width: 1170px) {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+.b-product__item_position1 {
+    margin: 39px 9px 32px;
+
+    @media(min-width: 768px) {
+        margin: 59px 16px 40px;
+    }
+
+    @media(min-width: 1170px) {
+        margin: 59px 0px 40px;
+    }
+}
+
+.b-product__item_position2 {
+    margin: 0px 9px 30px;
+
+    @media(min-width: 768px) {
+        margin: 0px 16px 40px;
+    }
+
+    @media(min-width: 1170px) {
+        margin: 0px 0px 40px;
+    }
+}
+
+
+
+
+
+.b-product__img {
+    img {
+        height: 188px;
+        width: 144px;
+        display: block;
+
+        @media(min-width: 768px) {
+            height: 306px;
+            width: 262px;
+        }
+    }
+}
+
+.b-product__info_position {
+    margin-left: 17px;
+
+}
+
+.b-product__mango {
+    width: 141px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #222222;
+
+    @media(min-width: 768px) {
+        font-size: 24px;
+        line-height: 29px;
+        width: 187px;
+    }
+
+}
+
+.b-product__mango_position {
+    margin-top: 13px;
+    margin-bottom: 26px;
+
+    @media(min-width: 768px) {
+        margin-top: 22px;
+        margin-bottom: 31px;
+    }
+}
+
+.b-product__price,
+.b-product__color,
+.b-product__size,
+.b-product__quantity {
+    font-size: 14px;
+    line-height: 17px;
+    color: #575757;
+
+    @media(min-width: 768px) {
+        font-size: 22px;
+        line-height: 26px;
+    }
+
+    span {
+        color: #6F6E6E;
+    }
+}
+
+.b-product__price,
+.b-product__color,
+.b-product__size {
+    margin-bottom: 4px;
+
+    @media(min-width: 768px) {
+        margin-bottom: 6px;
+    }
+
+}
+
+
+.b-product__price {
+    span {
+        color: #EF5B70;
+        padding-left: 4px;
+    }
+}
+
+.b-product__quantity input {
+    width: 24px;
+    height: 15px;
+    color: #656565;
+    border: 1px solid #EAEAEA;
+    // padding: 1px 9px;
+    margin-left: 30px;
+    position: relative;
+    bottom: 2px;
+    text-align: center;
+    font-size: 10px;
+    line-height: 12px;
+
+    @media(min-width: 768px) {
+        width: 43px;
+        height: 24px;
+        font-size: 18px;
+        line-height: 24px;
+        margin-left: 35px;
+    }
+
+}
+
+// Кнопки 2шт.
+.b-product__buttonsLeft {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 9px;
+    margin-bottom: 48px;
+
+    @media(min-width: 768px) {
+        justify-content: center;
+
+    }
+
+    @media(min-width: 1170px) {
+        justify-content: space-between;
+        padding: 0;
+        margin-bottom: 0;
+
+    }
+
+    button {
+        border: 1px solid #A4A4A4;
+        width: 174px;
+        height: 32px;
+        background-color: #ffff;
+        font-size: 12px;
+        line-height: 14px;
+        color: #575757;
+
+        @media(min-width: 768px) {
+            font-size: 14px;
+            line-height: 17px;
+            width: 234px;
+            height: 49px;
+
+            &:not(:first-child) {
+                margin-left: 49px;
+            }
+        }
+
+    }
+}
+
+// Форма заполнения адресса. SHIPPING ADRESS-
+
+
+.b-product__right {
+    @media(min-width: 768px) {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    @media(min-width: 1170px) {
+        display: block;
+        flex-grow: 1;
+
+    }
+}
+
+.b-product__right_position {
+    @media(min-width: 1170px) {
+        margin-left: 128px;
+    }
+}
+
+.b-product__data_position {
+    width: 100%;
+    margin-left: 10px;
+    margin-bottom: 48px;
+
+    @media(min-width: 768px) {
+        margin-left: 16px;
+        margin-bottom: 0;
+    }
+
+    @media(min-width: 1170px) {
+        margin-left: 0;
+    }
+}
+
+.b-product__buttonsRight {
+
+    button {
+        border: 1px solid #A4A4A4;
+        width: 100px;
+        height: 34px;
+        background: white;
+        font-size: 11px;
+        line-height: 13px;
+        color: #575757;
+    }
+}
+
+.b-product__header {
+    margin-bottom: 20px;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: #222222;
+}
+
+.b-product__form {
+    display: flex;
+    flex-direction: column;
+
+    input {
+        border: 1px solid #A4A4A4;
+        height: 44px;
+        margin-right: 6px;
+        padding-left: 17px;
+
+        &:not(:last-child) {
+            margin-bottom: 21px;
+        }
+
+        &:last-child {
+            margin-bottom: 24px;
+        }
+
+        font-weight: 300;
+        font-size: 13px;
+        line-height: 16px;
+        color: #B1B1B1;
+
+    }
+
+}
+
+.b-product__checkout {
+    background: #F5F3F3;
+    margin: 0 9px 96px;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    width: 100%;
+    height: 214px;
+
+    @media(min-width: 768px) {
+        margin: 38px 16px 147px;
+    }
+
+    @media(min-width: 1170px) {
+        margin-left: 0;
+    }
+
+}
+
+.b-checkout__subTotal {
+    font-size: 11px;
+    line-height: 13px;
+    color: #4A4A4A;
+    margin-bottom: 12px;
+    margin-top: 39px;
+    margin-right: 34px;
+
+    span {
+        padding-left: 15px;
+    }
+
+}
+
+
+.b-checkout__grandTotal {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: #222222;
+    margin-right: 37px;
+
+    span {
+        color: #F16D7F;
+        padding-left: 10px;
+    }
+}
+
+.b-cheockout__divider {
+    border: 1px solid #E2E2E2;
+    width: 275px;
+    margin: 0 auto;
+    margin-bottom: 17px;
+    margin-top: 21px;
+}
+
+
+.b-checkout_buttonProceed {
+    background: #F16D7F;
+    margin: 0 auto;
+    text-align: center;
+    padding: 15px 42px;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    margin-bottom: 42px;
+
+}
