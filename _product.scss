@@ -244,7 +244,7 @@
 }
 
 .b-product__data_position {
-    width: 100%;
+    flex-grow: 2;
     margin-left: 10px;
     margin-bottom: 48px;
 
@@ -312,7 +312,7 @@
     display: flex;
     flex-direction: column;
     align-items: end;
-    width: 100%;
+    flex-grow: 1;
     height: 214px;
 
     @media(min-width: 768px) {
