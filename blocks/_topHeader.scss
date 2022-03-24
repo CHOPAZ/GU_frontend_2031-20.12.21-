@@ -1,0 +1,24 @@
+.b-topHeader {
+    background: #F8F3F4;
+    min-height: 148px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media (min-width: 768px) {
+        justify-content: left;
+    }
+
+
+}
+
+.b-topHeader__text {
+    font-size: 24px;
+    line-height: 29px;
+    font-weight: normal;
+    color: #F16D7F;
+
+    @media (min-width: 768px) and (max-width: 1169px) {
+        padding-left: 16px;
+    }
+}
