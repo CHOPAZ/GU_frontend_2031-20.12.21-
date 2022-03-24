@@ -1,0 +1,86 @@
+.b-formReg {
+    @media(min-width: 768px) {
+        width: 354px;
+        flex-grow: 1;
+    }
+}
+
+.b-formReg_margin {
+    margin: 40px 9px;
+
+    @media(min-width: 768px) {
+        margin-left: 16px;
+        margin-right: 22px;
+        margin-bottom: 0px;
+    }
+
+    @media(min-width: 1170px) {
+        margin-left: 0px;
+        margin-right: 128px;
+        margin-top: 64px;
+    }
+
+}
+
+
+// стили текста  Your Name и Login details
+.b-formReg__textName {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: #222222;
+}
+
+.b-formReg__textName_paddingTop {
+    padding-top: 34px;
+}
+
+// Поля ввода имени (First and Last Name)
+
+.b-formReg__input {
+    display: flex;
+    flex-direction: column;
+}
+
+.b-formReg__field {
+    border: 1px solid #A4A4A4;
+    height: 44px;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 16px;
+    color: #B1B1B1;
+    padding-left: 17px;
+
+}
+
+.b-formReg__field_posTopInput {
+    margin: 20px 0px;
+}
+
+
+
+
+//  Кнопки радио
+.b-formReg__checkbox_marginTop {
+    margin-top: 31px;
+}
+
+.b-formReg__textRadio {
+    font-weight: 300;
+    font-size: 11px;
+    line-height: 13px;
+    color: #000000;
+}
+
+.b-formReg__textRadio_left {
+    padding-left: 10px;
+}
+
+.b-formReg__male_marginleft {
+    margin-left: 9px;
+}
+
+.b-formReg__female_marginleft,
+.b-formReg__other_marginleft {
+    margin-left: 20px;
+}

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrarion</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,700;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Обертка всего содержимого страницы (wrapper), для прижатя footer к нижней части экрана -->
+    <div class="wrapper">
+        <!-- разбиение сайта на верхнюю часть (top_content) и нижнюю часть (footer) -->
+        <div class="top_content">
+            <!-- Шапка -->
+            <div class="header">
+                <div class="container">
+                    <div class="left__menu">
+                        <img src="images/logo.svg" alt="logo">
+                        <img class="searchIcon" src="images/search.svg" alt="search">
+                    </div>
+                    <div class="right__menu">
+                        <img class="barsLogo" src="images/bars.svg" alt="bars">
+                        <img class="userLogo" src="images/user.svg" alt="user">
+                        <span class="cartLogo__wrap">
+                            <img class="cartLogo" src="images/cart.svg" alt="cart">
+                            <span class="cartText">5</span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <!-- REGISTRATION -->
+            <div class="b-topHeader">
+                <div class="container">
+                    <h1 class="b-topHeader__text">REGISTRATION</h1>
+                </div>
+            </div>
+            <div class="b-centrContent container">
+                <div class="b-formReg b-formReg_margin">
+                    <!-- Форма заполнения Your name. -->
+                    <div class="b-formReg__textName">
+                        Your Name
+                    </div>
+                    <form action="#" class="b-formReg__input">
+                        <input type="text" placeholder="First Name"
+                            class="b-formReg__field b-formReg__field_posTopInput">
+                        <input type="text" placeholder="Last Name"
+                            class="b-formReg__field b-formReg__field_posBotInput">
+                    </form>
+                    <!-- Флажки выбора пола -->
+                    <form action="#" class="b-formReg__checkbox b-formReg__checkbox_marginTop">
+                        <input type="radio" name="contact" value="Male"
+                            class="b-formReg__male b-formReg__male_marginleft"> <span
+                            class="b-formReg__textRadio b-formReg__textRadio_left">Male</span>
+                        <input type="radio" name="contact" value="Female"
+                            class="b-formReg__female b-formReg__female_marginleft"> <span
+                            class="b-formReg__textRadio b-formReg__textRadio_left">Female</span>
+                        <input type="radio" name="contact" value="Other"
+                            class="b-formReg__other b-formReg__other_marginleft"> <span
+                            class="b-formReg__textRadio b-formReg__textRadio_left">Other</span>
+                    </form>
+                    <!-- Форма заполнения Login details -->
+                    <div class="b-formReg__textName b-formReg__textName_paddingTop">
+                        Login details
+                    </div>
+                    <form action="#" class="b-formReg__input">
+                        <input type="email" placeholder="Email" class="b-formReg__field b-formReg__field_posTopInput">
+                        <input type="password" placeholder="Password"
+                            class="b-formReg__field b-formReg__field_posBotInput">
+                    </form>
+                    <div class="b-formReg__textAfter b-formReg__textAfter_margin ">
+                        Please use 8 or more characters, with at least 1 number and a mixture of uppercase and lowercase
+                        letters
+                    </div>
+                    <!-- Кнопка -->
+                    <form action="#" class="b-formReg__button">
+                        <button class="b-formReg__click">
+                            JOIN MOW
+                            <img src="images/arrowButton.svg"
+                                class="b-formReg__arrowButton b-formReg__arrowButton_paddingLeft" alt="arrow">
+                        </button>
+                    </form>
+                </div>
+                <!--  Программа LOYALTY HAS ITS PERKS -->
+                <div class="b-progLoyality b-progLoyality_margin">
+                    <div class="b-progLoyality__text headerLoyality">
+                        LOYALTY HAS ITS PERKS
+                    </div>
+                    <div class="b-progLoyality__text paragraphLoyality">
+                        Get in on the loyalty program where you can earn points and unlock serious perks. Starting with
+                        these as soon as you join:
+                    </div>
+                    <div class="b-progLoyality__text b-progLoyality__text_paddingBot">
+                        <img src="images/CheckMark.svg"
+                            class="b-progLoyality__checkMark b-progLoyality__checkMark_paddingRight" alt="">
+                        <span class="b-progLoyality__line">15% off welcome offer
+                        </span>
+                    </div>
+                    <div class="b-progLoyality__text b-progLoyality__text_paddingBot">
+                        <img src="images/CheckMark.svg"
+                            class="b-progLoyality__checkMark b-progLoyality__checkMark_paddingRight" alt="">
+                        <span class="b-progLoyality__line">Free shipping, returns and exchanges on all orders
+                        </span>
+                    </div>
+                    <div class="b-progLoyality__text b-progLoyality__text_paddingBot">
+                        <img src="images/CheckMark.svg"
+                            class="b-progLoyality__checkMark b-progLoyality__checkMark_paddingRight" alt="">
+                        <span class="b-progLoyality__line">$10 off a purchase on your birthday
+                        </span>
+                    </div>
+                    <div class="b-progLoyality__text b-progLoyality__text_paddingBot">
+                        <img src="images/CheckMark.svg"
+                            class="b-progLoyality__checkMark b-progLoyality__checkMark_paddingRight" alt="">
+                        <span class="b-progLoyality__line">Early access to products
+                        </span>
+                    </div>
+                    <div class="b-progLoyality__text b-progLoyality__text_paddingBot">
+                        <img src="images/CheckMark.svg"
+                            class="b-progLoyality__checkMark b-progLoyality__checkMark_paddingRight" alt="">
+                        <span class="b-progLoyality__line">Exclusive offers & rewards
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Подвал сайта -->
+    <div class="footer">
+        <!-- SUBSCRIBE -->
+        <div class="subscribe">
+            <div class="sub_block container">
+                <div class="sub_top">
+                    <img src="images/sub-top.svg" alt="">
+                    <p>“Vestibulum quis porttitor dui! Quisque viverra nunc mi, <span>a pulvinar purus
+                            condimentum</span>“
+                    </p>
+                </div>
+                <div class="sub_bot">
+                    <div class="sub_bot-text">
+                        <h3>SUBSCRIBE</h3>
+                        <p>FOR OUR NEWLETTER AND PROMOTION</p>
+                    </div>
+                    <form class="sub_bot-form" action="#">
+                        <input type="text" placeholder="Enter Your Email">
+                        <button>Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- copyright-->
+        <div class="copyright ">
+            <div class="copy_block container">
+                <div class="icon">
+                    <a href="#">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-pinterest-p"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                </div>
+                <div class="copyright_text">
+                    &copy; 2021 Brand All Rights Reserved.
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

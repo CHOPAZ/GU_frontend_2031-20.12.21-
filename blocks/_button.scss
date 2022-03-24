@@ -1,0 +1,19 @@
+.b-formReg__click {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #ffffff;
+    border: 1px solid #F26376;
+    padding: 16px 29px;
+    background-color: #F16D7F;
+    cursor: pointer;
+
+}
+
+.b-formReg__arrowButton_paddingLeft {
+    padding-left: 20px;
+}
+
+.b-formReg__click:active {
+    background-color: #d65768;
+}

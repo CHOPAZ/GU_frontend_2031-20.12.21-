@@ -1,0 +1,9 @@
+.b-centrContent {
+    @media(min-width: 768px) {
+        display: flex;
+    }
+
+    @media(min-width: 1170px) {
+        margin-bottom: 94px;
+    }
+}
